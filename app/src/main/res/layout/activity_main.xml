@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/next" />
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/prev" />
+    </RelativeLayout>
+
+    <com.testanimdemo.widget.AutoTextView
+        android:id="@+id/switcher02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark" />
+
+    <com.testanimdemo.widget.HorizonScrollTextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_vertical" />
+
+    <com.testanimdemo.widget.HorizonScrollTextView2
+        android:id="@+id/tv_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/testEllipsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="就覅偶文静说地方就开了撒娇时间的空间空间进口阀"
+        android:layout_marginTop="20dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        />
+
+    <com.testanimdemo.widget.MarqueeView
+        android:id="@+id/marquee_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:padding="5dp">
+    </com.testanimdemo.widget.MarqueeView>
+
+
+    <LinearLayout
+        android:id="@+id/marqueeLayout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@mipmap/ic_launcher"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="跑马灯啊啊啊啊啊啊啊啊啊啊啊"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <com.testanimdemo.widget.MarqueeView
+        android:id="@+id/marquee_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:padding="5dp">
+    </com.testanimdemo.widget.MarqueeView>
+
+
+
+    <com.testanimdemo.widget.VerticalMarqueeView
+        android:id="@+id/verticalMarqueeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:mvAnimDuration="500"
+        app:mvInterval="3000"
+        app:mvTextColor="#ff0000"
+        app:mvTextSize="18sp">
+    </com.testanimdemo.widget.VerticalMarqueeView>
+
+
+
+</LinearLayout>
